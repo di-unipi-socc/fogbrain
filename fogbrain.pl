@@ -15,4 +15,4 @@ fogBrain(App, NewPlacement) :-
 	reasoningStep(App, Placement, AllocHW, AllocBW, NewPlacement).
 fogBrain(App, Placement) :-
 	\+deployment(App,_,_,_),
-	time(placement(App, Placement)).
+	placement(App, Placement).
