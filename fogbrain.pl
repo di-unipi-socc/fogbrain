@@ -13,9 +13,9 @@ fogBrainT(A, NewP) :- time(fogBrain(A, NewP)).
 
 fogBrain(App, NewPlacement) :-
 	deployment(App, Placement, AllocHW, AllocBW),
-  consult('infra'),
+	consult('infra'),
 	time(reasoningStep(App, Placement, AllocHW, AllocBW, NewPlacement)).
 fogBrain(App, Placement) :-
 	\+deployment(App,_,_,_),
-  consult('infra'),
+	consult('infra'),
 	time(placement(App, Placement)).
