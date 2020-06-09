@@ -22,7 +22,7 @@ To try **FogBrain**:
 
 3. Inside the running program either run the query
    ```prolog
-   :- fogBrainT(vrApp, P).
+   :- fogBrain(vrApp, P).
    ``` 
    The output will be a first placement for the application described in `app.pl` onto the infrastructure described in `infra.pl`. 
    E.g.
