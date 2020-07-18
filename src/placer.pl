@@ -12,7 +12,7 @@ placement([S|Ss], AllocHW, NewAllocHW, AllocBW, NewAllocBW, Placement, NewPlacem
 servicePlacement(S, AllocHW, NewAllocHW, N) :-
 	service(S, SWReqs, HWReqs, TReqs),
 	node(N, SWCaps, HWCaps, TCaps),
-	hwTh(T), HWCaps >= T + HWReqs,
+	hwTh(T), HWCaps >= HWReqs + T,
 	thingReqsOK(TReqs, TCaps),
 	swReqsOK(SWReqs, SWCaps),
 	hwReqsOK(HWReqs, HWCaps, N, AllocHW, NewAllocHW).
