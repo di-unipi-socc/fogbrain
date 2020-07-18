@@ -4,7 +4,7 @@ reasoningStep(App, Placement, AllocHW, AllocBW, NewPlacement) :-
 
 toMigrate(Placement, ServicesToMigrate) :-
     findall((S,N,HWReqs), onSufferingNode(S,N,HWReqs,Placement), ServiceDescr1),
-    findall((SD1,SD2), onSufferingLinks(SD1,SD2,Placement), ServiceDescr2),
+    findall((SD1,SD2), onSufferingLink(SD1,SD2,Placement), ServiceDescr2),
     merge(ServiceDescr2, ServiceDescr1, ServicesToMigrate).
 
 onSufferingNode(S, N, HWReqs, Placement) :-  
@@ -18,7 +18,7 @@ nodeProblem(N, SWReqs, TReqs) :-
 nodeProblem(N, _, _) :- 
     \+ node(N, _, _, _).
 
-onSufferingLinks((S1,N1,HWReqs1),(S2,N2,HWReqs2),Placement) :-
+onSufferingLink((S1,N1,HWReqs1),(S2,N2,HWReqs2),Placement) :-
     member(on(S1,N1), Placement), member(on(S2,N2), Placement), N1 \== N2,
     s2s(S1, S2, ReqLat, _),
     communicationProblem(N1, N2, ReqLat),
