@@ -12,6 +12,14 @@ Before using **FogBrain** you need to install the latest stable release of [SWI-
 
 All information on FogBrain can be found [here](http://pages.di.unipi.it/forti/fogbrain/index.html), along with a [quickstart example](http://pages.di.unipi.it/forti/fogbrain/quickstart.html) and [interactive documentation](http://pages.di.unipi.it/forti/fogbrain/docs.html) on the current release.
 
+FogBrain is described in the following article:
+
+> [Stefano Forti](http://pages.di.unipi.it/forti) and [Antonio Brogi](http://pages.di.unipi.it/brogi)<br>
+> [**Continuous Reasoning for Managing Next-Gen Distributed Applications**](http://eptcs.web.cse.unsw.edu.au/paper.cgi?ICLP2020.22.pdf), <br>	
+> ICLP Technical Communications, EPTCS, vol. 325, pp. 164-177, 2020. 
+
+If you wish to reuse source code in this repo, please consider citing the above mentioned article.
+
 ## Tutorial
 
 To try **FogBrain**:
