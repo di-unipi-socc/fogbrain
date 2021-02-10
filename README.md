@@ -4,6 +4,12 @@ _continuous reasoning for managing next-gen distributed applications_
 
 <br></br>
 
+FogBrain methodology is fully described in the following journal paper:
+
+> [Stefano Forti](http://pages.di.unipi.it/forti), [Antonio Brogi](http://pages.di.unipi.it/brogi)<br>
+> [**Continuous Reasoning for Managing Next-Gen Distributed Applications**](https://doi.org/10.4204/EPTCS.325.22), <br>	
+> ICLP 2020 (Technical Communications), EPTCS, vol. 325, pp. 164–177, 2020. 
+
 ## Prerequisites
 
 Before using **FogBrain** you need to install the latest stable release of [SWI-Prolog](https://www.swi-prolog.org/download/stable).
