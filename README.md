@@ -12,7 +12,15 @@ FogBrain methodology is fully described in the following article:
 
 If you wish to reuse source code in this repo, please consider citing it.
 
-## Prerequisites
+## Background & Prerequisites
+
+FogBrain is written in Prolog. Prolog programs are finite sets of *clauses* of the form:
+
+```prolog
+a :- b1, ... , bn.
+```
+
+stating that `a` holds when `b1` and ... and `bn` holds, where `n =< 0` and `a`, `b1` ..., `bn` are atomic literals. Clauses with empty condition are also called *facts*. Prolog variables begin with upper-case letters, lists are denoted by square brackets, and negation by `\+`.
 
 Before using **FogBrain** you need to install the latest stable release of [SWI-Prolog](https://www.swi-prolog.org/download/stable).
 
